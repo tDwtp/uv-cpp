@@ -25,7 +25,7 @@ int send(SocketAddr& to, const char* buf, unsigned size)
 Send data.
 * SocketAddr& to : The sending address.
 * const char* buf : Sending data buffer.
-* unsigned size : Sending data legth.
+* unsigned size : Sending data length.
 * return : 0 on success, or an error code < 0 on failure.
 <br></br>
 ```C++
