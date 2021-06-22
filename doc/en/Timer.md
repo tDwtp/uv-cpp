@@ -1,6 +1,6 @@
 # `Timer`
 uv timer.
-<br></br>
+
 ```C++
 Timer(EventLoop* loop, uint64_t timeout, uint64_t repeat, TimerCallback callback)
 ```
