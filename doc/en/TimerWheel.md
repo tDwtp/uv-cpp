@@ -1,36 +1,39 @@
 # `TimerWheel template<typename Type>`
 Time wheel.
- 
+
+### Constructor
 ```C++
 TimerWheel(EventLoop* loop)
 ```
-Constructor.
 * `EventLoop*` loop : Event loop's handle.
-
+<br/><br/>
 ```C++
 TimerWheel(EventLoop* loop, unsigned int timeout)
 ```
-Constructor.
 * `EventLoop*` loop : Event loop's handle.
 * `unsigned int` timeout : Timeout in seconds.
 
+### `setTimeout`
 ```C++
 void setTimeout(unsigned int seconds)
 ```
 Set timeout of seconds.
 * `unsigned int` timeout : Timeout in seconds.
 
+### `getTimeout`
 ```C++
 int getTimeout()
 ```
 Get timeout of seconds.
 * return : Timeout in seconds.
 
+### `start`
 ```C++
 void start()
 ```
 Start time wheel.
 
+### `insert`
 ```C++
 void insert(std::shared_ptr<Type> value)
 ```
