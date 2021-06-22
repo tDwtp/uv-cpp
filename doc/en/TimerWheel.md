@@ -37,5 +37,5 @@ Start time wheel.
 ```C++
 void insert(std::shared_ptr<Type> value)
 ```
-Insert element of time wheel.
+Insert element into time wheel.
 * `std::shared_ptr<Type>` value : Elements of the time wheel.
