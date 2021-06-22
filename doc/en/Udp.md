@@ -1,39 +1,38 @@
 # Udp
 Udp class.
-<br></br>
 ```C++
 Udp(EventLoop* loop)
 ```
 Constructor.
 * EventLoop* loop : Event loop's handle.
-<br></br>
+
 ```C++
 virtual ~Udp()
 ```
 Destructor.
-<br></br>
+
 ```C++
 int bindAndRead(SocketAddr& addr)
 ```
 Bind address and start read data.
-* SocketAddr& addr : The bound address.
-* return : 0 on success, or an error code < 0 on failure.
-<br></br>
+* SocketAddr& addr : The address to read from.
+* return : `0` on success, or an error-code `< 0` on failure.
+
 ```C++
 int send(SocketAddr& to, const char* buf, unsigned size)
 ```
 Send data.
-* SocketAddr& to : The sending address.
-* const char* buf : Sending data buffer.
-* unsigned size : Sending data length.
-* return : 0 on success, or an error code < 0 on failure.
-<br></br>
+* SocketAddr& to : The target address.
+* const char* buf : data buffer to send.
+* unsigned size : length of data in buf.
+* return : `0` on success, or an error-code `< 0` on failure.
+
 ```C++
 void close(DefaultCallback callback)
 ```
 Close Udp.
 * DefaultCallback callback : Callback function after closing.
-<br></br>
+
 ```C++
 void setMessageCallback(OnUdpMessageCallback callback)
 ```
